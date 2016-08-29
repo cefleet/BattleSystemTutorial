@@ -1,0 +1,119 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Unit.gd" type="Script" id=1]
+
+[node name="Unit" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+HP = null
+Exertion = null
+Dexterity = null
+Intelligence = null
+Strength = null
+AttackCost = null
+AttackType = null
+UnitName = ""
+UnitImage = null
+
+[node name="HPLabel" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -35.0
+margin/top = -55.0
+margin/right = -17.0
+margin/bottom = -41.0
+text = "HP"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HP" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 26.0
+margin/top = -54.0
+margin/right = 34.0
+margin/bottom = -40.0
+text = "0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ExertionLabel" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -35.0
+margin/top = -71.0
+margin/right = 17.0
+margin/bottom = -57.0
+text = "Exertion"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Exertion" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 26.0
+margin/top = -70.0
+margin/right = 34.0
+margin/bottom = -56.0
+text = "0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CombatText" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -19.0
+margin/top = -108.0
+margin/right = 21.0
+margin/bottom = -94.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="."]
+
+vframes = 21
+hframes = 13
+
+[node name="UnitName" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -23.0
+margin/top = 42.0
+margin/right = 17.0
+margin/bottom = 56.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+
