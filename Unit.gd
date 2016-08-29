@@ -14,12 +14,14 @@ export(int) var AttackCost
 export(String, "Magic", "Melee", "Ranged") var AttackType
 export(String, MULTILINE) var UnitName = ''
 export(Texture) var UnitImage
+
 #attacks the target which is another unit
 func attack(target):
 	if _Exertion < AttackCost:
 		get_node("CombatText").set_text("Not Enough Exertion. Wait and then try again")
 		return
 	var attackPower
+	
 	if AttackType == "Magic":
 		attackPower = Intelligence
 	elif AttackType == "Melee":
@@ -71,6 +73,7 @@ func die():
 	get_node("Sprite").set_frame((20*13)+5)
 
 func _ready():
+	randomize()
 	_Exertion = Exertion
 	_HP = HP
 	get_node("Exertion").set_text(str(_Exertion))
